@@ -3,7 +3,8 @@ run-name: Rest API Python Tests
 
 on:
   push:
-
+  schedule:
+     - cron: "*/2 * * * *"
 jobs:
   Run-Tests:
     runs-on: ubuntu-latest
