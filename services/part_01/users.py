@@ -12,6 +12,6 @@ def get_users_list(page_id):
     url = "https://reqres.in/api/users"
 
     session = requests.session()
-    response = session.get(url, params={'page': page_id})
+    response = session.get(url, headers=HEADERS, params={'page': page_id})
 
     return response
