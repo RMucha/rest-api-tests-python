@@ -13,5 +13,4 @@ def get_users_list(page_id):
 
     session = requests.session()
     response = session.get(url, headers=HEADERS, params={'page': page_id})
-
     return response
